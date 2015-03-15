@@ -7,3 +7,9 @@ A modern, clean, and very simple responsive HTML invoice template, because somet
 
 ### How to use
 Open invoice.html and use the HTML and CSS provided inside in your application. Everything is contained within a `.invoice-box` divider.
+
+### Preview
+![Preview](http://www.nextstepwebs.com/examples/invoice.png)
+
+### Suggestions?
+Open an issue, and provide as much detail as possible.
