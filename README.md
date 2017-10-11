@@ -1,6 +1,9 @@
 # Simple HTML invoice template
 A modern, clean, and very simple responsive HTML invoice template, because sometimes you just need something quick and simple.
 
+### RTL support
+Replace `<div class="invoice-box">` with `<div class="invoice-box rtl">`
+
 ### Demo
 [Find a demo here](https://www.sparksuite.com/open-source/invoice)
 
