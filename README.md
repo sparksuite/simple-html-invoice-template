@@ -11,7 +11,7 @@ Open invoice.html and use the HTML and CSS provided inside in your application. 
 Replace `<div class="invoice-box">` with `<div class="invoice-box rtl">`
 
 ### Preview
-![Preview](http://i.imgur.com/C3ePdqQ.png)
+![Preview](https://i.ibb.co/Hqm3MTX/s.jpg)
 
 ### Suggestions?
 Open an issue, and provide as much detail as possible.
