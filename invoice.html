@@ -1,213 +1,127 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>A simple, clean, and responsive HTML invoice template</title>
-    
-    <style>
-    .invoice-box {
-        max-width: 800px;
-        margin: auto;
-        padding: 30px;
-        border: 1px solid #eee;
-        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-        color: #555;
-    }
-    
-    .invoice-box table {
-        width: 100%;
-        line-height: inherit;
-        text-align: left;
-    }
-    
-    .invoice-box table td {
-        padding: 5px;
-        vertical-align: top;
-    }
-    
-    .invoice-box table tr td:nth-child(2) {
-        text-align: right;
-    }
-    
-    .invoice-box table tr.top table td {
-        padding-bottom: 20px;
-    }
-    
-    .invoice-box table tr.top table td.title {
-        font-size: 45px;
-        line-height: 45px;
-        color: #333;
-    }
-    
-    .invoice-box table tr.information table td {
-        padding-bottom: 40px;
-    }
-    
-    .invoice-box table tr.heading td {
-        background: #eee;
-        border-bottom: 1px solid #ddd;
-        font-weight: bold;
-    }
-    
-    .invoice-box table tr.details td {
-        padding-bottom: 20px;
-    }
-    
-    .invoice-box table tr.item td{
-        border-bottom: 1px solid #eee;
-    }
-    
-    .invoice-box table tr.item.last td {
-        border-bottom: none;
-    }
-    
-    .invoice-box table tr.total td:nth-child(2) {
-        border-top: 2px solid #eee;
-        font-weight: bold;
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .invoice-box table tr.top table td {
-            width: 100%;
-            display: block;
-            text-align: center;
-        }
-        
-        .invoice-box table tr.information table td {
-            width: 100%;
-            display: block;
-            text-align: center;
-        }
-    }
-    
-    /** RTL **/
-    .rtl {
-        direction: rtl;
-        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-    }
-    
-    .rtl table {
-        text-align: right;
-    }
-    
-    .rtl table tr td:nth-child(2) {
-        text-align: left;
-    }
-    </style>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://img.icons8.com/ios/344/s-symbol.png" rel="icon" />
+<title>Invoice template - by Shivam</title>
+<meta name="author" content="Shivam">
+<!-- Web Fonts
+======================= -->
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
+<!-- Stylesheet
+======================= -->
+<link rel="stylesheet" type="text/css" href=" vendor/bootstrap/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href=" vendor/font-awesome/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href=" css/stylesheet.css"/>
 </head>
-
 <body>
-    <div class="invoice-box">
-        <table cellpadding="0" cellspacing="0">
-            <tr class="top">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td class="title">
-                                <img src="https://www.sparksuite.com/images/logo.png" style="width:100%; max-width:300px;">
-                            </td>
-                            
-                            <td>
-                                Invoice #: 123<br>
-                                Created: January 1, 2015<br>
-                                Due: February 1, 2015
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="information">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td>
-                                Sparksuite, Inc.<br>
-                                12345 Sunny Road<br>
-                                Sunnyville, CA 12345
-                            </td>
-                            
-                            <td>
-                                Acme Corp.<br>
-                                John Doe<br>
-                                john@example.com
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="heading">
-                <td>
-                    Payment Method
-                </td>
-                
-                <td>
-                    Check #
-                </td>
-            </tr>
-            
-            <tr class="details">
-                <td>
-                    Check
-                </td>
-                
-                <td>
-                    1000
-                </td>
-            </tr>
-            
-            <tr class="heading">
-                <td>
-                    Item
-                </td>
-                
-                <td>
-                    Price
-                </td>
-            </tr>
-            
-            <tr class="item">
-                <td>
-                    Website design
-                </td>
-                
-                <td>
-                    $300.00
-                </td>
-            </tr>
-            
-            <tr class="item">
-                <td>
-                    Hosting (3 months)
-                </td>
-                
-                <td>
-                    $75.00
-                </td>
-            </tr>
-            
-            <tr class="item last">
-                <td>
-                    Domain name (1 year)
-                </td>
-                
-                <td>
-                    $10.00
-                </td>
-            </tr>
-            
-            <tr class="total">
-                <td></td>
-                
-                <td>
-                   Total: $385.00
-                </td>
-            </tr>
-        </table>
+<!-- Container -->
+<div class="container-fluid invoice-container">
+  <!-- Header -->
+  <header>
+  <div class="row align-items-center">
+    <div class="col-sm-7 text-center text-sm-left mb-3 mb-sm-0">
+      <img id="logo" src="https://www.sparksuite.com/images/logo.png" title="Sparksuite" alt="Sparksuite" />
     </div>
-</body>
+    <div class="col-sm-5 text-center text-sm-right">
+      <h4 class="text-7 mb-0">Invoice</h4>
+    </div>
+  </div>
+  <hr>
+  </header>
+  <!-- Main Content -->
+  <main>
+  <div class="row">
+    <div class="col-sm-6"><strong>Date:</strong> 25/11/2020</div>
+    <div class="col-sm-6 text-sm-right"> <strong>Invoice No:</strong> 0001</div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-6 text-sm-right order-sm-1"> <strong>Pay To:</strong>
+      <address>
+      Spark-Suite Inc.<br/>
+      12345 Sunny Road<br/>
+      Sunnyville, TX 12345<br/>
+      sparksuite@xyz.com
+      </address>
+    </div>
+    <div class="col-sm-6 order-sm-0"> <strong>Invoiced To:</strong>
+      <address>
+      Shivam-Singh<br />
+      bulding no- 32 ,<br />
+      43321 , INDIA<br />
+      Shivamsingh@example.com<br>
+     <div class=""> <strong>Payment Mode:</strong> Card</div>
+      </address>
+     
+
+    </div>
+  </div> 
+
+ 
+  <div class="card">
+    <div class="card-header px-2 py-0">
+      <table class="table mb-0">
+        <thead>
+          <tr>
+            <td class="col-3 border-0"><strong>Service</strong></td>
+			<td class="col-4 border-0"><strong>Description</strong></td>
+            <td class="col-2 text-center border-0"><strong>Rate</strong></td>
+			<td class="col-1 text-center border-0"><strong>QTY</strong></td>
+            <td class="col-2 text-right border-0"><strong>Amount</strong></td>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="card-body px-2">
+      <div class="table-responsive">
+        <table class="table">
+          <tbody>
+            <tr>
+              <td class="col-3 border-0">Design</td>
+              <td class="col-4 text-1 border-0">Creating a website design</td>
+              <td class="col-2 text-center border-0">₹50.00</td>
+			  <td class="col-1 text-center border-0">10</td>
+			  <td class="col-2 text-right border-0">₹500.00</td>
+            </tr>
+            <tr>
+              <td>Development</td>
+              <td class="text-1">Website Development</td>
+              <td class="text-center">₹120.00</td>
+			  <td class="text-center">10</td>
+			  <td class="text-right">₹1200.00</td>
+            </tr>
+			<tr>
+              <td>SEO</td>
+              <td class="text-1">Optimize the site for search engines (SEO)</td>
+              <td class="text-center">₹450.00</td>
+			  <td class="text-center">1</td>
+			  <td class="text-right">₹450.00</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="bg-light-2 text-right"><strong>Sub Total:</strong></td>
+              <td class="bg-light-2 text-right">₹2150.00</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="bg-light-2 text-right"><strong>Tax:</strong></td>
+              <td class="bg-light-2 text-right">₹215.00</td>
+            </tr>
+            <tr>
+              <td colspan="4" class="bg-light-2 text-right"><strong>Total:</strong></td>
+              <td class="bg-light-2 text-right">₹2365.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </main>
+  <!-- Footer -->
+  <footer class="text-center mt-4">
+  <p class="text-1"><strong>NOTE :</strong> This is computer generated receipt and does not require physical signature.</p>
+  <div class="btn-group btn-group-sm d-print-none"> <a href="javascript:window.print()" class="btn btn-light border text-black-50 shadow-none"><i class="fa fa-print"></i> Print</a> <a href="" class="btn btn-light border text-black-50 shadow-none"><i class="fa fa-download"></i> Download</a> </div>
+  </footer>
+</div>
 </html>
