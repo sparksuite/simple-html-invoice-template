@@ -1,213 +1,278 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
+    
     <title>A simple, clean, and responsive HTML invoice template</title>
     
     <style>
-    .invoice-box {
-        max-width: 800px;
-        margin: auto;
-        padding: 30px;
-        border: 1px solid #eee;
-        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-        color: #555;
-    }
-    
-    .invoice-box table {
-        width: 100%;
-        line-height: inherit;
-        text-align: left;
-    }
-    
-    .invoice-box table td {
-        padding: 5px;
-        vertical-align: top;
-    }
-    
-    .invoice-box table tr td:nth-child(2) {
-        text-align: right;
-    }
-    
-    .invoice-box table tr.top table td {
-        padding-bottom: 20px;
-    }
-    
-    .invoice-box table tr.top table td.title {
-        font-size: 45px;
-        line-height: 45px;
-        color: #333;
-    }
-    
-    .invoice-box table tr.information table td {
-        padding-bottom: 40px;
-    }
-    
-    .invoice-box table tr.heading td {
-        background: #eee;
-        border-bottom: 1px solid #ddd;
+
+        * {
+             font-family: sans-serif;/* Change your font family */
+
+          }
+          body{
+            background-color: #EEFBFB;
+          }
+
+.content-table {
+
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.9em;
+  min-width: 600px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #12232E;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-table th,.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: white;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid black;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #4DA8DA;
+}
+
+  .table{
+
+  border-collapse: collapse;
+  margin: auto;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+  } 
+
+  .table thead tr {
+  background-color: #007CC7;
+  color: #ffffff;
+  text-align: center;
+}
+
+.table th,.table td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.table tbody tr {
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+
+h1{ font-size: 70px; 
+}
+
+ .Total{
+         background-color: #203647;
+        color: #ffffff;
+        text-align: center;
         font-weight: bold;
-    }
-    
-    .invoice-box table tr.details td {
-        padding-bottom: 20px;
-    }
-    
-    .invoice-box table tr.item td{
-        border-bottom: 1px solid #eee;
-    }
-    
-    .invoice-box table tr.item.last td {
-        border-bottom: none;
-    }
-    
-    .invoice-box table tr.total td:nth-child(2) {
-        border-top: 2px solid #eee;
-        font-weight: bold;
-    }
-    
-    @media only screen and (max-width: 600px) {
-        .invoice-box table tr.top table td {
-            width: 100%;
-            display: block;
-            text-align: center;
         }
         
-        .invoice-box table tr.information table td {
-            width: 100%;
-            display: block;
-            text-align: center;
-        }
-    }
-    
-    /** RTL **/
-    .rtl {
-        direction: rtl;
-        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-    }
-    
-    .rtl table {
-        text-align: right;
-    }
-    
-    .rtl table tr td:nth-child(2) {
-        text-align: left;
-    }
+
     </style>
 </head>
 
 <body>
-    <div class="invoice-box">
-        <table cellpadding="0" cellspacing="0">
-            <tr class="top">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td class="title">
-                                <img src="https://www.sparksuite.com/images/logo.png" style="width:100%; max-width:300px;">
-                            </td>
-                            
-                            <td>
-                                Invoice #: 123<br>
-                                Created: January 1, 2015<br>
-                                Due: February 1, 2015
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="information">
-                <td colspan="2">
-                    <table>
-                        <tr>
-                            <td>
-                                Sparksuite, Inc.<br>
-                                12345 Sunny Road<br>
-                                Sunnyville, CA 12345
-                            </td>
-                            
-                            <td>
-                                Acme Corp.<br>
-                                John Doe<br>
-                                john@example.com
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-            
-            <tr class="heading">
+    <table cellspacing="1" cellpadding="10" align="center" class="table">
+        <thead>
+        <tr>
+            <th><h1>INVOICE</h1></th>
+        <th><img src="https://www.sparksuite.com/images/logo.png" style="width:100%; max-width:250px;"></th>
+    </tr>
+     </thead>
+      <tbody>
+        <tr>
+
+            <td>
+                <p>
+                Supplier,<br>
+               <font size="5"> Sparksuite</font><br>
+                777 Brockton Avenue,<br>
+                Abington MA 2351,<br>
+                Vestavia Hills AL<br>
+                TXN: XXXXXXX<br>
+            </p>
+            </td>
+            <td>
+            <p>
+                 Client,<br>
+                 <font size="5">Carlos Lehder</font><br>
+                 Managing director , Medellín cartel<br>
+                 Phone : 7656818387<br>
+                 Email : carlos123@gmail.com<br>
+                 TXN: XXXXXXX<br>
+            </p>
+
+        </td>
+    </tr>
+    <tr>
+        <td> 
+            <b>Payment Method:</b> NetBanking<br>
+            <b>Deliver Date:</b> 10-04.2021<br>
+        </td>
+        <td>
+            <b>Invoice No.:</b> XXXX<br>
+            <b>Order Number:</b> #868<br>
+        </td>
+    </tr>
+   </tbody>
+</table>
+
+         <table class="content-table" align="center">
+            <thead>
+             <tr >
+                 <th>
+                     No.
+                 </th>
+                 <th>
+                     Item
+                 </td>
+                 <th>
+                     Price
+                 </th>
+                 <th>
+                     Quantity
+                 </th>
+                 <th>
+                     Total
+                 </th>
+             </tr>
+         </thead>
+
+           <tbody>
+             <tr>
                 <td>
-                    Payment Method
-                </td>
-                
+                     1
+                 </td>
+                 <td>
+                     Website Templete
+                 </td>
+                 <td>
+                     $300
+                 </td>
+                 <td>
+                     1
+                 </td>
+                 <td>
+                     $300
+                 </td>
+                 
+             </tr>
+             <tr class="active-row">
                 <td>
-                    Check #
-                </td>
-            </tr>
-            
-            <tr class="details">
-                <td>
-                    Check
-                </td>
-                
-                <td>
-                    1000
-                </td>
-            </tr>
-            
-            <tr class="heading">
-                <td>
-                    Item
-                </td>
-                
-                <td>
-                    Price
-                </td>
-            </tr>
-            
-            <tr class="item">
-                <td>
-                    Website design
-                </td>
-                
-                <td>
-                    $300.00
-                </td>
-            </tr>
-            
-            <tr class="item">
-                <td>
-                    Hosting (3 months)
-                </td>
-                
-                <td>
-                    $75.00
-                </td>
-            </tr>
-            
-            <tr class="item last">
-                <td>
-                    Domain name (1 year)
-                </td>
-                
-                <td>
-                    $10.00
-                </td>
-            </tr>
-            
-            <tr class="total">
+                     2
+                 </td>
+                 <td>
+                     Hosting (3 months)
+                 </td>
+                 <td>
+                     $100
+                 </td>
+                 <td>
+                     1
+                 </td>
+                 <td>
+                     $100
+                 </td>
+                 
+             </tr>
+             <tr>
+                 <td>
+                     3
+                 </td>
+                 <td>
+                     Domain name (1 year)
+                 </td>
+                 <td>
+                     $200
+                 </td>
+                 <td>
+                     2
+                 </td>
+                 <td>
+                     $400
+                 </td>
+             </tr>
+             <tr class="active-row">
+                 <td>
+                     4
+                 </td>
+                 <td>
+                     Business Card
+                 </td>
+                 <td>
+                     $1
+                 </td>
+                 <td>
+                     100
+                 </td>
+                 <td>
+                     $100
+                 </td>
+             </tr>
+             <tr class="two">
                 <td></td>
-                
-                <td>
-                   Total: $385.00
-                </td>
-            </tr>
-        </table>
-    </div>
+                 <td>
+              <b> Total</b> </td>
+                 <td></td>
+                 <td></td>
+                 <td>
+                     $900
+                 </td>
+
+             </tr>
+         </tbody>
+
+             <tr>
+                <td></td>
+                 <td></td>
+                 <td></td>
+                 <td>Sub Total</td>
+                 <td>$900</td>
+                </tr>
+
+                <tr>
+                <td></td>
+                 <td></td>
+                 <td></td>
+                 <td>Tax</td>
+                 <td>$50</td>
+                </tr>
+
+                <tr class="Total">
+                <td></td>
+                 <td></td>
+                 <td></td>
+                 <td>Grand Total</td>
+                 <td>$950</td>
+                </tr>
+           </table>
+
+               
 </body>
 </html>
