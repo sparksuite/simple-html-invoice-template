@@ -23,7 +23,7 @@ Open invoice.html and use the HTML and CSS provided inside in your application. 
 Replace `<div class="invoice-box">` with `<div class="invoice-box rtl">`
 
 ## Preview
-![Preview](http://i.imgur.com/C3ePdqQ.png)
+<img width="1325" alt="Preview" src="https://user-images.githubusercontent.com/3850064/111213188-8190a780-859e-11eb-99b5-e038eac4b172.png">
 
 ## Contributing
 We love contributions! Contributing is easy; [learn how](https://github.com/sparksuite/rugged/blob/master/CONTRIBUTING.md).
