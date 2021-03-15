@@ -1,6 +1,17 @@
 # <div align="center">Simple HTML Invoice Template</div>
 
+<p align="center">
+<a href="https://validator.w3.org/check?uri=https%3A%2F%2Fsparksuite.github.io%2Fsimple-html-invoice-template%2F"><img alt="W3C Validation" src="https://img.shields.io/w3c-validation/default?targetUrl=https%3A%2F%2Fsparksuite.github.io%2Fsimple-html-invoice-template%2F"></a>
+<a href="https://github.com/prettier/prettier"><img alt="license" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg"></a>
+<a href="https://github.com/sparksuite/rugged/blob/master/LICENSE"><img alt="license" src="https://img.shields.io/github/license/sparksuite/simple-html-invoice-template"></a>
+</p>
+
 A modern, clean, and very simple responsive HTML invoice template, because sometimes you just need something quick and simple.
+
+- ✨ Simple design
+- 📱 Responsive
+- 🔧 Easily customizable
+- 🌍 RTL support
 
 ## Demo
 [Find a demo here](https://www.sparksuite.com/open-source/invoice.html)
