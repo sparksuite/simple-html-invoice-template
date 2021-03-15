@@ -2,9 +2,40 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 		<title>A simple, clean, and responsive HTML invoice template</title>
 
+		<!-- Favicon -->
+		<link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+
+		<!-- Invoice styling -->
 		<style>
+			body {
+				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				text-align: center;
+				color: #777;
+			}
+
+			body h1 {
+				font-weight: 300;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+				color: #000;
+			}
+
+			body h3 {
+				font-weight: 300;
+				margin-top: 10px;
+				margin-bottom: 20px;
+				font-style: italic;
+				color: #555;
+			}
+
+			body a {
+				color: #06f;
+			}
+
 			.invoice-box {
 				max-width: 800px;
 				margin: auto;
@@ -82,24 +113,15 @@
 					text-align: center;
 				}
 			}
-
-			/** RTL **/
-			.rtl {
-				direction: rtl;
-				font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-			}
-
-			.rtl table {
-				text-align: right;
-			}
-
-			.rtl table tr td:nth-child(2) {
-				text-align: left;
-			}
 		</style>
 	</head>
 
 	<body>
+		<h1>A simple, clean, and responsive HTML invoice template</h1>
+		<h3>Because sometimes, all you need is something simple.</h3>
+		Find the code on <a href="https://github.com/sparksuite/simple-html-invoice-template">GitHub</a>. Licensed under the
+		<a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.<br /><br /><br />
+
 		<div class="invoice-box">
 			<table cellpadding="0" cellspacing="0">
 				<tr class="top">
@@ -107,7 +129,7 @@
 						<table>
 							<tr>
 								<td class="title">
-									<img src="https://www.sparksuite.com/images/logo.png" style="width: 100%; max-width: 300px" />
+									<img src="./images/logo.png" style="width: 100%; max-width: 300px" />
 								</td>
 
 								<td>
@@ -127,7 +149,7 @@
 								<td>
 									Sparksuite, Inc.<br />
 									12345 Sunny Road<br />
-									Sunnyville, CA 12345
+									Sunnyville, TX 12345
 								</td>
 
 								<td>

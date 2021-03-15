@@ -1,0 +1,12 @@
+{
+	"scripts": {
+		"dev": "yarn install --frozen-lockfile",
+		"test": "echo 'This project does not contain automated tests'",
+		"lint": "prettier --check '**/*.{json,html,yml}'",
+		"format": "prettier --write '**/*.{json,html,yml}'",
+		"clean": "git clean -X -d --force && find . -type d -empty -delete"
+	},
+	"devDependencies": {
+		"prettier": "^2.2.1"
+	}
+}
