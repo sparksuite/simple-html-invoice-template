@@ -17,7 +17,7 @@ A modern, clean, and very simple responsive HTML invoice template, because somet
 [Find a demo here](https://sparksuite.github.io/simple-html-invoice-template/)
 
 ## How to use
-Open invoice.html and use the HTML and CSS provided inside in your application. Everything is contained within a `.invoice-box` divider.
+Open the [invoice.html](https://github.com/sparksuite/simple-html-invoice-template/blob/master/invoice.html) file and use its HTML and CSS in your application.
 
 ## RTL support
 Replace `<div class="invoice-box">` with `<div class="invoice-box rtl">`
