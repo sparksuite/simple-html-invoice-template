@@ -96,6 +96,21 @@
 			.invoice-box.rtl table tr td:nth-child(2) {
 				text-align: left;
 			}
+			#btn{
+				margin-top: 1em;
+				position: relative;
+				left: 45%;
+				padding: .7em 2.5em;
+				background: #000;
+				font-size: 1em;
+			   color: #fff;
+			}
+			#btn:hover{
+				transform: rotate(-360deg);
+				transition: transform 0.4s ease;
+				background: #fff;
+				color:#000	
+			}
 		</style>
 	</head>
 
@@ -183,5 +198,6 @@
 				</tr>
 			</table>
 		</div>
+		 <button id="btn">submit</button>
 	</body>
 </html>
