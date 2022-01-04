@@ -28,7 +28,7 @@ By default, the layout of the invoice when printed is equal to the regular layou
 </p>
 
 Example:
-```
+```css
 @media print {
   .invoice-box {
     max-width: unset;
