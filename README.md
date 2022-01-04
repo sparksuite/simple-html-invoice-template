@@ -19,6 +19,18 @@ A modern, clean, and very simple responsive HTML invoice template, because somet
 ## How to use
 Open the [invoice.html](https://github.com/sparksuite/simple-html-invoice-template/blob/master/invoice.html) file and use its HTML and CSS in your application.
 
+## Printer-friendly styling
+By default, the appearance of the invoice when printed is the same as when viewed on a screen. If the invoice is the primary or only element on the page, you may want to consider removing the box-shadow and border, and letting the invoice extend the full width of the page. That can be accomplished with this CSS:
+```css
+@media print {
+  .invoice-box {
+    max-width: unset;
+    box-shadow: none;
+    border: 0px;
+  }
+}
+```
+
 ## RTL support
 Replace `<div class="invoice-box">` with `<div class="invoice-box rtl">`
 
