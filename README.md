@@ -35,7 +35,8 @@ By default, the appearance of the invoice when printed is the same as when viewe
 Replace `<div class="invoice-box">` with `<div class="invoice-box rtl">`
 
 ## Preview
-<img width="1325" alt="Preview" src="https://user-images.githubusercontent.com/3850064/111213188-8190a780-859e-11eb-99b5-e038eac4b172.png">
+<img width="1325" alt="Preview" src="https://github.com/sparksuite/simple-html-invoice-template/assets/3850064/5d34c8d2-5ac4-45cf-93f9-1eeaaf23765e">
+
 
 ## Contributing
 We love contributions! Contributing is easy; [learn how](https://github.com/sparksuite/simple-html-invoice-template/blob/master/CONTRIBUTING.md).
